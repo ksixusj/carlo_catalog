@@ -1,0 +1,103 @@
+[
+    {
+        "picture" : "cellphones/cp1.jpg",
+        "name" : "infinix zero 4g",
+        "price" : "9,999.00"
+    },
+
+    {
+        "picture" : "cellphones/cp2.jpg",
+        "name" : "IPhone 15 pro max",
+        "price" : "84,990.00 "
+    },
+
+    {
+        "picture" : "cellphones/cp3.jpg",
+        "name" : "Google Pixel 8 Pro  ",
+        "price" : "48,500.00 "
+    },
+
+    {
+        "picture" : "cellphones/cp4.jpg",
+        "name" : "Samsung Galaxy Z Fold 5 ",
+        "price" : "105,990 "
+    },
+
+
+
+
+
+    {
+        "picture" : "cellphones/cp5.jpg",
+        "name" : "Samsung Galaxy Z Flip 5 ",
+        "price" : "71,990 "
+    },
+
+    {
+        "picture" : "cellphones/cp6.jpg",
+        "name" : "Asus Zenfone 10 ",
+        "price" : "70,285.00"
+    },
+
+    {
+        "picture" : "cellphones/cp7.jpg",
+        "name" : "Sony Xperia 1 V ",
+        "price" : "56,890.00 "
+    },
+
+    {
+        "picture" : "cellphones/cp8.jpg",
+        "name" : "Google Pixel 7a",
+        "price" : "25,990 "
+    },
+
+
+    {
+        "picture" : "cellphones/cp9.jpg",
+        "name" : "Apple iPhone 13 mini",
+        "price" : "61,990.00"
+    },
+
+    {
+        "picture" : "cellphones/cp10.jpg",
+        "name" : "Sony Xperia Pro-I",
+        "price" : "67,760"
+    },
+
+    {
+        "picture" : "cellphones/cp11.jpg",
+        "name" : "Asus ROG Phone 7 Ultimate",
+        "price" : "66,995.00"
+    },
+
+    {
+        "picture" : "cellphones/cp12.jpg",
+        "name" : "Samsung Galaxy A54 5G",
+        "price" : "24,990 "
+    },
+
+    {
+        "picture" : "cellphones/cp13.jpg",
+        "name" : "Samsung Galaxy A14 5G",
+        "price" : "12,990.00 "
+    },
+
+    {
+        "picture" : "cellphones/cp14.jpg",
+        "name" : "Motorola Razr+ 2023 ",
+        "price" : "60,060"
+    }
+
+
+
+
+
+
+
+
+
+
+   
+    
+    
+]

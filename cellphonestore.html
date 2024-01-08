@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #cellphone-store {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+
+        }
+
+        .cellphone-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(16.60% -30px);
+            border: 2px solid black;
+            background-color: #fff6cc;
+         
+
+            
+        }
+
+        .item-image {
+            max-width: 100%;
+            height: 200px;
+            border-radius: 4px;
+            padding-top: 20px;
+            align-items: center;
+            object-fit: cover; 
+            display: block;
+            margin: 0 auto;
+        }
+
+        .cellphone-name {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            text-transform: capitalize;
+            
+        }
+
+        .cellphone-price {
+            font-weight: bold;
+            color: black;
+            margin-bottom: 8px;
+            background-color: #ffdd32;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .cart-button {
+            background-color: #333;
+            color: #ffdd32;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .cart-button:hover {
+            background-color: #fffae5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffdd32;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+            background-color: #333;
+            padding: 20px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            letter-spacing: 3px;
+            font-size: 45px;
+           
+            
+        }
+
+     
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('cellphones.json') 
+                .then(response => response.json())
+                .then(cellphones => {
+                    const cellphoneCatalog = document.getElementById('cellphone-store');
+
+                    let cellphoneStore = "";
+                    for (const cellphone of cellphones) {
+                        cellphoneStore += `
+                            <div class="cellphone-item">
+                                <img src="${cellphone.picture}" alt="${cellphone.name}" class="item-image">
+                                <h3 class="cellphone-name">${cellphone.name}</h3>
+                                <p class="cellphone-price">&#8369;${cellphone.price}</p>
+                                <button class="cart-button">Add to Cart</button>
+                            </div>
+                        `;
+                    }
+
+                    cellphoneCatalog.innerHTML = cellphoneStore;
+                })
+                .catch(error => console.error('Error fetching cellphone data:', error));
+        });
+    </script>
+</head>
+<body>
+    <header>
+    <h1>Cellphone Store</h1>
+</header>
+    <div id="cellphone-store"></div>
+</body>
+</html>
